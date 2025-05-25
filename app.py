@@ -3,6 +3,7 @@ from flask_cors import CORS
 from openai import OpenAI
 from dotenv import load_dotenv
 load_dotenv()
+import os
 
 
 app = Flask(__name__)  # Flask app 생성
