@@ -1,14 +1,15 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from openai import OpenAI
+from openai
 from dotenv import load_dotenv
-load_dotenv()
 import os
 
+load_dotenv()
 
 app = Flask(__name__)  # Flask app 생성
 CORS(app)
-client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 @app.route("/generate", methods=["POST"])     # '/generate' 경로로 들어오는 POST 처리
 def generate():
@@ -56,7 +57,7 @@ def generate():
 사용자 질문: "{user_question}"
 """
 
-    response = client.chat.completions.create(
+    response = openai.ChatCompletion.create(
         model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": system_msg},
@@ -64,7 +65,7 @@ def generate():
         ]
     )
 
-    result = response.choices[0].message.content
+    result = response["choices"][0]["message"]["content"]
     return jsonify({"result": result})
     
 @app.route("/regenerate", methods=["POST"])
@@ -107,7 +108,7 @@ def regenerate():
 사용자 질문: "{user_question}"
 """
 
-    response = client.chat.completions.create(
+    response = openai.ChatCompletion.create(
         model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": system_msg},
@@ -115,7 +116,7 @@ def regenerate():
         ]
     )
 
-    result = response.choices[0].message.content
+    result = response["choices"][0]["message"]["content"]
     return jsonify({"result": result})
 
 
