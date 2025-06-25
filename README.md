@@ -24,7 +24,11 @@
 
 ## 🚀 설치 방법
 
-[Chrome Web Store](https://chromewebstore.google.com/detail/ep-easy-prompt/kfakockdmapaapeegdhcaecommhlanli?hl=ko) 에서 바로 설치
+<a href="https://chromewebstore.google.com/detail/ep-easy-prompt/kfakockdmapaapeegdhcaecommhlanli?hl=ko">
+  <img src="./readme_img/store_picture.png" width="600" alt="EP 크롬 웹스토어 이미지">
+</a>  
+
+[Chrome Web Store](https://chromewebstore.google.com/detail/ep-easy-prompt/kfakockdmapaapeegdhcaecommhlanli?hl=ko) 에서 바로 설치가 가능합니다.
 
 ---
 
@@ -37,7 +41,11 @@
 5. 재작성된 질문이 ChatGPT에 자동 입력됨
 6. 더 구체적이고 유익한 답변 확인!
 
-[![EP 시연 영상](https://img.youtube.com/vi/CHJcz6H5quk/0.jpg)](https://youtu.be/CHJcz6H5quk)
+<a href="https://youtu.be/CHJcz6H5quk">
+  <img src="./readme_img/demo_thumbnail.png" width="500" alt="EP 시연 영상 썸네일">
+</a>  
+
+자세한 내용은 [EP 시연 영상](https://youtu.be/CHJcz6H5quk)을 통해 확인하세요.
 
 ---
 
